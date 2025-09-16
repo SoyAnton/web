@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyAnton | Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="p-6 flex justify-between items-center shadow-sm bg-white sticky top-0 z-50">
+        <h1 class="text-2xl font-bold text-gray-900">Mi Portafolio</h1>
+            <nav class="flex gap-6 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600">Sobre mí</a>
+                <a href="#projects" class="hover:text-blue-600">Proyectos</a>
+                <a href="#skills" class="hover:text-blue-600">Habilidades</a>
+                <a href="#contact" class="hover:text-blue-600">Contacto</a>
+            </nav>
+    </header>
+    <section class="hero-section">
+        <h2>¡Hola! Soy <span class="text-red-600">Anton</span></h2>
+            <p>Developer, Entrepreneur and Creator.</p>
+                <div class="buttons">
+                    <a href="#projects" class="btn-primary">Ver proyectos</a>
+                    <a href="#contact" class="btn-secondary">Contáctame</a>
+                </div>
+    </section> 
+    <section id="about" class="section text-center bg-white">
+        <h3 class="text-3xl font-extrabold text-gray-900 mb-6">Sobre mí</h3>
+            <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+            Soy un desarrollador web con experiencia en la creación de sitios, bots de discord, plugins de Minecraft. Me apasiona el código, y cada día busco aprender un nuevo lenguaje o framework para la creación de nuevos proyectos y mejorar mis habilidades.
+            </p>
+    </section>
+<section id="skills" class="section">
+    <h3>Habilidades</h3>
+        <div class="skills-grid">
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>Marketing</span>
+        </div>
+    </section>
+    <section id="projects" class="section bg-gray-100">
+    <h3>Proyectos</h3>
+    <div class="projects-grid">
+        <div class="project-card" data-title="Akuma Kokuryu" data-description="Bot de discord que combina todos los comandos de eventos, creación de tickets, canales, categorias, etc... Al igual contiene comandos para la gestión de roles y permisos." data-link="https://discord.com/oauth2/authorize?client_id=1368811518610898994&permissions=8&integration_type=0&scope=bot" data-image="assets/images/akuma-image.png">
+            <img src="assets/images/akuma-image.png" alt="Akuma Kokuryu" class="project-image mb-4 rounded">
+            <h4>Akuma Kokuryu</h4>
+            <p>Bot de Discord dirigido a la gestión de los servidores en la parte de seguridad y administrativa</p>
+            <a href="#" class="project-btn">Ver más →</a>
+        </div>
+        <div class="project-card" data-title="Santorixia Prestige" data-description="Emprendimiento enfocado en la venta de productos que se encuentren en tendencia en todo el mundo, a precios sumamente accesibles para todas las personas" data-link="https://linktr.ee/SantorixiaPrestige?utm_source=linktree_profile_share&ltsid=580898a9-c245-4e92-8001-9ab6922b7e18" data-image="assets/images/santorixia-image.png">
+            <img src="assets/images/santorixia-image.png" alt="SantorixiaPrestige" class="project-image mb-4 rounded">
+            <h4>Santorixia Prestige</h4>
+            <p>Emprendimiento de la venta de productos y servicios de forma digital</p>
+            <a href="#" class="project-btn">Ver más →</a>
+        </div>
+        <div class="project-card" data-title="Plugin de Minecraft" data-description="Plugin enfocado en la administración de eventos, comandos, seguridad, entre otros. Todo colocado en un solo lugar y de manera eficiente" data-link="#" data-image="assets/images/project3-image.png">
+            <img src="assets/images/project3-image.png" alt="Plugin de Minecraft" class="project-image mb-4 rounded">
+            <h4>Plugin de Minecraft</h4>
+            <p>Desarrollando...</p>
+            <a href="#" class="project-btn">Ver más →</a>
+        </div>
+    </div>
+</section>
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-lg max-w-lg w-full relative shadow-xl">
+            <button id="close-modal" class="absolute top-2 right-4 text-gray-600 hover:text-gray-900 text-2xl font-bold">&times;</button>
+            <img id="modal-image" src="" alt="Imagen del proyecto" class="w-full max-h-32 object-contain rounded-t-lg mb-4">
+            <h4 id="modal-title" class="text-2xl font-bold mb-2">Título del proyecto</h4>
+            <p id="modal-description" class="mb-4 text-gray-600">Descripción del proyecto...</p>
+            <a id="modal-link" href="#" target="_blank" class="btn-primary">Ver proyecto</a>
+    </div>
+</div>
+    <section id="contact" class="section bg-gray-100 text-center">
+        <h3>Contacto</h3>
+        <p>¿Quieres colaborar conmigo? ¡Escríbeme!</p>
+            <div class="contact-links">
+                <a href="https://github.com/SoyAnton" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/anton.successful/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/+529994421186" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+    </section>
+    <footer class="footer">
+    © <script>document.write(new Date().getFullYear())</script> Web respaldada por SantPress Organization. Todos los derechos reservados.
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
